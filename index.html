@@ -21,7 +21,10 @@
             <div class="container">
                 <a href="/index.html"><img src="./img/logo.png" class="logo" alt="Logo"></a>
                 <a class="navbar-brand" href="#!">Citas Psicologicas</a>
-                <a class="btn btn-primary" href="#signup">Logueate</a>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Logueate
+                  </button>
+                  
             </div>
         </nav>
         <!-- Masthead-->
@@ -100,7 +103,88 @@
                 </div>
             </div>
         </section>
+        
+        <!-- Modal Logueo -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Logueate</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="inputPassword4">
+                </div>
+                
+                <div class="col-12">
+                  <button type="button" class="btn btn-primary">Logueate</button>
+                </div>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Modal Registro-->
+<div class="modal fade" id="exampleModalRegistro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Registrate</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form class="row g-3">
+                <div class="col-md-12">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Confirma tu Contraseña</label>
+                    <input type="password" class="form-control" id="inputPassword4">
+                  </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Direccion</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">Departamento</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">Municipio</label>
+                    <input type="text" class="form-control" id="Ciudad">
+                  
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Registrate</button>
+                </div>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
         <!-- Image Showcases-->
+
         <section class="showcase">
             <div class="container-fluid p-0">
                 <div class="row g-0">
@@ -174,7 +258,7 @@
                             <div class="row">
                                 <div class="col">
                                     <input class="form-control form-control-lg" id="emailAddressBelow" type="email" placeholder="Email Address" data-sb-validations="required,email" />
-                                    <p>Ya tienes cuenta Logueate</p> <a href="#" class="btn btn-primary">LOGUEATE</a>
+                                    <p>Ya tienes cuenta Logueate</p> <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalRegistro">Registrate</button>
                                     <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:required">Email Address is required.</div>
                                     <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:email">Email Address Email is not valid.</div>
                                 </div>
