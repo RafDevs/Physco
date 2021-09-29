@@ -11370,3 +11370,16 @@ footer.footer {
 .logo{
   width: 10rem;
 }
+
+.back{
+  background: rgb(49,147,210);
+background: linear-gradient(90deg, rgba(49,147,210,1) 19%, rgba(42,42,220,1) 55%, rgba(0,212,255,1) 100%);
+}
+
+.white{
+ background-color: white; 
+ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+margin-top: 5rem;
+}
