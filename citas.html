@@ -1,0 +1,57 @@
+<!-- 
+FileName -     bootstrapForm.html
+Description -  This is a regular Bootstrap form takes two inputs name, and dob. Bootstrap was used for responsiveness
+Author -       Tanu Nanda Prabhu
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Citas</title>
+    <!-- Necessary libraries and adjustments of Bootstrap for responsiveness -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+    
+</head>
+<body>
+
+    <div class="container">
+        
+        <h1>Creación de Citas</h1><br>
+
+        <!-- Dummy Form, on submitting goes nowhere -->
+        <form action="">
+        <div class="form-group">
+        <label>Correlativo</label>
+        <input  class="form-control" type="number">
+        </div>
+        <div class="form-group">
+            <label>ID Paciente</label>
+            <input  class="form-control" type="number">
+            </div><div class="form-group">
+                <label>ID Doctor</label>
+                <input  class="form-control" type="number">
+                </div>
+        <div class="form-group">
+            <label>Titulo</label>
+            <input  class="form-control" type="text">
+            </div>
+        <div class="form-group">
+        <label>Fecha de Cita</label>
+        <input class="form-control" type="date">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        <button type="submit" class="btn btn-primary">Cancelar</button>
+        </form>
+
+        <br>
+
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
